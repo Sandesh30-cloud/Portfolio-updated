@@ -40,8 +40,8 @@ const ContactSection = () => {
   ];
 
   const socials = [
-    { icon: Github, label: 'GitHub', href: 'https://github.com' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/Sandesh30-cloud' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/sandesh-yesane-644396259/' },
   ];
 
   return (

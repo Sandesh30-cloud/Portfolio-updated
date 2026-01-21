@@ -41,7 +41,7 @@ const Navbar = () => {
         >
           <span className="font-display text-2xl font-bold text-primary">&lt;</span>
           <span className="font-display text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
-            Sandesh
+            Sandesh Yesane
           </span>
           <span className="font-display text-2xl font-bold text-primary">/&gt;</span>
         </motion.a>

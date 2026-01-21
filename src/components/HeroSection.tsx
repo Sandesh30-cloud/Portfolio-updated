@@ -82,7 +82,7 @@ const HeroSection = () => {
             Get In Touch
           </motion.a>
           <motion.a
-            href="/Sandesh_Yesane_Resume.pdf"
+            href="https://drive.google.com/file/d/1klxYCSrgZBSx8nC7AkXBl4eY_4hBCJFL/view?usp=drive_link"
             download
             className="px-8 py-4 rounded-lg border border-primary/50 text-primary font-semibold text-lg hover:bg-primary/10 transition-all flex items-center gap-2"
             whileHover={{ scale: 1.05 }}

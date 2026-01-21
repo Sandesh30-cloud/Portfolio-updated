@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Camera, MapPin, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, Camera, MapPin, ChevronDown, Download } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -80,6 +80,16 @@ const HeroSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             Get In Touch
+          </motion.a>
+          <motion.a
+            href="/Sandesh_Yesane_Resume.pdf"
+            download
+            className="px-8 py-4 rounded-lg border border-primary/50 text-primary font-semibold text-lg hover:bg-primary/10 transition-all flex items-center gap-2"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Download size={20} />
+            Resume
           </motion.a>
         </motion.div>
 

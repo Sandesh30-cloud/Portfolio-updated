@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Camera, MapPin, ChevronDown, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Camera, Code, MapPin, ChevronDown, Download } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -105,6 +105,7 @@ const HeroSection = () => {
             { icon: Linkedin, href: 'https://linkedin.com/in/sandesh-yesane-644396259/', label: 'LinkedIn' },
             { icon: Mail, href: 'mailto:sandeshyesane996@gmail.com', label: 'Email' },
             { icon: Camera, href: 'https://www.instagram.com/sandesh._04', label: 'Instagram' },
+            { icon: Code, href: 'https://leetcode.com/u/Lazy_Coder04/', label: 'Leetcode' },
           ].map(({ icon: Icon, href, label }) => (
             <motion.a
               key={label}

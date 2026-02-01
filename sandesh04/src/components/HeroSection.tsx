@@ -43,7 +43,7 @@ const HeroSection = () => {
           className="mb-8"
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-light">
-            Full Stack Developer & ML Enthusiast
+            Full Stack Developer, Data Science & AIML Enthusiast
           </h2>
         </motion.div>
 

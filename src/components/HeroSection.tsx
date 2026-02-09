@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Camera, Code, MapPin, ChevronDown, Download } from 'lucide-react';
+import ShinyText from '@/components/ShinyText';
+import DecryptedText from '@/components/DecryptedText';
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(187_100%_50%_/_0.08)_0%,_transparent_70%)]" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
       
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:60px_60px] opacity-20" />
@@ -20,7 +22,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
         >
-          <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+          <span className="w-2 h-2 bg-green-500 rounded-full" />
           <span className="text-sm text-muted-foreground">Available for opportunities</span>
         </motion.div>
 
@@ -32,7 +34,7 @@ const HeroSection = () => {
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
         >
           Hi, I'm{' '}
-          <span className="gradient-text">Sandesh</span>
+          <ShinyText text="Sandesh" className="gradient-text" speed={2.8} />
         </motion.h1>
 
         {/* Subtitle with typing effect */}
@@ -43,7 +45,7 @@ const HeroSection = () => {
           className="mb-8"
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-light">
-            Full Stack Developer & ML Enthusiast
+            <DecryptedText text="Full Stack Developer & ML Enthusiast" speed={190} maxIterations={14} />
           </h2>
         </motion.div>
 

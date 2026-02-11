@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 
 type TargetCursorProps = {
-  spinDuration?: number;
   hoverDuration?: number;
 };
 
 const INTERACTIVE_SELECTOR =
   'a, button, [role="button"], input, textarea, select, [data-cursor-target]';
 
-export default function TargetCursor({ spinDuration = 2.2, hoverDuration = 0.95 }: TargetCursorProps) {
+export default function TargetCursor({ hoverDuration = 0.95 }: TargetCursorProps) {
   const cursorRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<HTMLDivElement>(null);
   const mouseTarget = useRef({ x: 0, y: 0 });
@@ -104,9 +103,7 @@ export default function TargetCursor({ spinDuration = 2.2, hoverDuration = 0.95 
         style={{
           transitionDuration: `${hoverDuration}s`,
         }}
-      >
-        <span className="target-cursor-spin" style={{ animationDuration: `${spinDuration}s` }} />
-      </div>
+      />
       <div
         ref={cursorRef}
         className="target-cursor-core"

@@ -21,7 +21,7 @@ const App = () => (
             <Orb hoverIntensity={2} rotateOnHover hue={0} forceHoverState={false} backgroundColor="#000000" />
           </div>
           <div className="relative z-10">
-            <TargetCursor spinDuration={1.1} hoverDuration={0.2} />
+            <TargetCursor hoverDuration={0.2} />
             <Toaster />
             <Sonner />
             <BrowserRouter>

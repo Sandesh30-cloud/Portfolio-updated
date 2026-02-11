@@ -271,15 +271,6 @@
   will-change: transform, width, height;
 }
 
-.target-cursor-spin {
-  position: absolute;
-  inset: 0;
-  border-radius: 6px;
-  border: 1px dashed hsl(187 100% 65% / 0.55);
-  animation-name: target-cursor-spin;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
 
 /* Keyframes */
 @keyframes float {
@@ -318,14 +309,5 @@
   }
   100% {
     background-position: -120% 0;
-  }
-}
-
-@keyframes target-cursor-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

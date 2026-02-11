@@ -24,6 +24,7 @@ const achievements = [
     title: 'IBM Data Fundamentals Certification',
     organization: 'IBM',
     description: 'Foundational knowledge in data handling, databases, data analysis, and data-driven decision-making.',
+    credentialUrl: 'https://www.credly.com/badges/f7e75bd6-6637-47cd-aa5e-5e5d69e95a7f/public_url',
     icon: Award,
   },
   {
@@ -31,6 +32,7 @@ const achievements = [
     title: 'Data Science Certification',
     organization: 'Udemy',
     description: 'Comprehensive course covering data cleaning, EDA, statistics, machine learning, and visualization using Python.',
+    credentialUrl: 'https://drive.google.com/file/d/1gtZpcRn3dU-GtpBEXPmBgyDhLbpURIQx/view?usp=sharing',
     icon: GraduationCap,
   },
 ];
@@ -138,6 +140,16 @@ const ExperienceSection = () => {
                       <p className="text-sm text-muted-foreground">
                         {achievement.description}
                       </p>
+                      {'credentialUrl' in achievement && achievement.credentialUrl && (
+                        <a
+                          href={achievement.credentialUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex mt-3 text-sm text-primary hover:underline"
+                        >
+                          View credential
+                        </a>
+                      )}
                     </div>
                   </div>
                 </motion.div>
